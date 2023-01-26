@@ -43,6 +43,9 @@ function App() {
         {
           news[2] && <CardNew newNote={news[2]} /> 
         }
+        {
+          !news.length && <h2>No hay noticias relacionadas.</h2>
+        }
       </section>
     </div>
   )
